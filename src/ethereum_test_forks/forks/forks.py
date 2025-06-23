@@ -1383,11 +1383,15 @@ class Osaka(Prague, solc_name="cancun"):
     @classmethod
     def precompiles(cls, block_number: int = 0, timestamp: int = 0) -> List[Address]:
         """
-        At Osaka, pre-compile for p256verify operation is added.
+        At Osaka, pre-compile for p256verify operation and the sigrecover precompile is added.
 
         P256VERIFY = 0x100
+        SIGRECOVER = 0x12
         """
-        return [Address(0x100)] + super(Osaka, cls).precompiles(block_number, timestamp)
+        return [
+            Address(0x100),
+            Address(0x12)
+        ] + super(Osaka, cls).precompiles(block_number, timestamp)
 
     @classmethod
     def excess_blob_gas_calculator(

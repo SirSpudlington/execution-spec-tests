@@ -1,0 +1,15 @@
+opcode = EIP-7932 Does not introduce any new opcodes
+removed_precompile = EIP-7932 Does not remove any precompiles
+system_contract = EIP-7932 Does not add a system contract
+block_header_field = EIP-7932 Does not change block headers
+block_body_field = EIP-7932 Does not change block bodies
+gas_cost_changes = EIP-7932 Does not change existing gas costs
+gas_refunds_changes = EIP-7932 Does not change existing gas refunds
+blob_count_changes = EIP-7932 Does not change blob counts
+execution_layer_request = EIP-7932 Does not add any execution layer requests
+
+transaction_type/test/signature = secp256k1 signatures cannot apply for these transactions.
+precompile/test/value_transfer/fee = Sigrecover does not charge any fees
+precompile/test/inputs/valid/crypto = Sigrecover does not directly manage cryptographic operations
+precompile/test/input_lengths/static = Sigrecover has a dynamic input
+precompile/test/gas_usage/constant = Sigrecover has a dynamic gas cost

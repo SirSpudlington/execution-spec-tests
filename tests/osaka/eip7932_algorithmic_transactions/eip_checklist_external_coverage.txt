@@ -1,0 +1,1 @@
+# general/code_coverage/eels = Covered by ethereum/execution-specs PR #1292
