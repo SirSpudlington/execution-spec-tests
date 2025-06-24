@@ -20,7 +20,7 @@ REFERENCE_SPEC_VERSION = ref_spec_7932.version
 #     assert False
 
 
-# uv run fill -k "7932" tests/osaka/ --fork Osaka -v --clean
+# uv run fill -k "7932" tests --until Osaka -v --clean
 # pytest -m "not slow" -n auto --maxprocesses 10 --cov-config=pyproject.toml --cov=ethereum
 #   --cov-report=term --cov-report "xml:coverage.xml" --no-cov-on-fail --cov-branch
 #   --ignore-glob='tests/fixtures/*'

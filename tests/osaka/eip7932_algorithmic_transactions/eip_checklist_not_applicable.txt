@@ -11,5 +11,5 @@ execution_layer_request = EIP-7932 Does not add any execution layer requests
 transaction_type/test/signature = secp256k1 signatures cannot apply for these transactions.
 precompile/test/value_transfer/fee = Sigrecover does not charge any fees
 precompile/test/inputs/valid/crypto = Sigrecover does not directly manage cryptographic operations
-precompile/test/input_lengths/static = Sigrecover has a dynamic input
+precompile/test/input_lengths/static = Sigrecover has dynamic input data
 precompile/test/gas_usage/constant = Sigrecover has a dynamic gas cost
